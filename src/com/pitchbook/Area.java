@@ -3,18 +3,16 @@ package com.pitchbook;
 import java.util.Scanner;
 
 public class Area {
-    public static final double PI = 3.1415926;
-
     public static void areaOfSquare (int side) {
         System.out.println("The area of the square is: " + side * side);
     }
 
     public static void areaOfCircle (int side) {
-        System.out.println("The area of the circle is:" + side * side * PI);
+        System.out.println("The area of the circle is:" + side * side * Math.PI);
     }
 
     public static void areaOfTriangle (int side) {
-        System.out.println("The area of the triangle is:" + (Math.sqrt(3) / 4) * side * side);
+        System.out.println("The area of the triangle is: " + (Math.sqrt(3) / 4) * side * side);
     }
 
     static void main(String[] args) {
