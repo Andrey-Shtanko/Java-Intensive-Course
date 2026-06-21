@@ -27,14 +27,15 @@ public class Character {
 
         if (character.weapon == null) {
             System.out.println(character.name + " has no weapon and running away...");
+            return;
         }
-        else {
-            increaseHealthBeforeFight();
 
-            System.out.println("Makes a hit with " + this.weapon.getName());
-            System.out.println(character.name + " looses " + this.weapon.getDamage() + " health points");
-            System.out.println(character.name + " remaining health " + (character.health - this.weapon.getDamage()));
-        }
+        increaseHealthBeforeFight();
+
+        System.out.println("Makes a hit with " + this.weapon.getName());
+        System.out.println(character.name + " looses " + this.weapon.getDamage() + " health points");
+        System.out.println(character.name + " remaining health " + (character.health - this.weapon.getDamage()));
+
     }
 
 }
