@@ -1,4 +1,4 @@
-package com.pitchbook;
+package com.pitchbook.HW1;
 
 import java.util.Scanner;
 
