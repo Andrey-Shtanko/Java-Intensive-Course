@@ -32,9 +32,9 @@ public class Character {
 
         increaseHealthBeforeFight();
 
-        System.out.println("Makes a hit with " + this.weapon.getName());
-        System.out.println(character.name + " looses " + this.weapon.getDamage() + " health points");
-        System.out.println(character.name + " remaining health " + (character.health - this.weapon.getDamage()));
+        System.out.println("Makes a hit with " + this.weapon.weaponName());
+        System.out.println(character.name + " looses " + this.weapon.damage() + " health points");
+        System.out.println(character.name + " remaining health " + (character.health - this.weapon.damage()));
 
     }
 
