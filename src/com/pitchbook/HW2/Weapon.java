@@ -1,14 +1,6 @@
 package com.pitchbook.HW2;
 
-public class Weapon {
-    private final String weaponName;
-    private final int damage;
-
-    public Weapon(String weaponName, int damage) {
-        this.weaponName = weaponName;
-        this.damage = damage;
-    }
-
+public record Weapon (String weaponName, int damage) {
     public String getName() {
         return this.weaponName;
     }
